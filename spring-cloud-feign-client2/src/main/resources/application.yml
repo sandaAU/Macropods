@@ -1,0 +1,14 @@
+# restaurant-service IS CLIENT NO.1
+# =================================
+
+
+spring:
+   application:
+      name: restaurant-service
+server:
+   port: ${app_port}
+eureka:
+   client:
+      serviceURL:
+         defaultZone: http://localhost:8900/eureka
+         # standalone EUREKA server

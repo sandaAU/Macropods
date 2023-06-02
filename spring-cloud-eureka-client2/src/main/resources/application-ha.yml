@@ -1,0 +1,10 @@
+spring:
+   application:
+      name: customer-service
+server:
+   port: ${app_port}
+eureka:
+   client:
+      serviceURL:
+         defaultZone: http://localhost:8900/eureka,http://localhost:8901/eureka
+         # EUREKA server in high-availability mode

@@ -1,0 +1,13 @@
+# customer-service IS CLIENT NO.2
+# ===============================
+
+spring:
+   application:
+      name: customer-service
+server:
+   port: ${app_port}
+eureka:
+   client:
+      serviceURL:
+         defaultZone: http://localhost:8900/eureka
+         # standalone EUREKA server

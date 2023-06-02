@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+  
+    <groupId>tutorialspoint.com</groupId>
+    <artifactId>SpringBoot-SpringCloud-projetcs_tutorialspoint.com_Olga-Sharma_1.6.23-23.35</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>tutorialspoint.com:SpringBoot-SpringCloud-projetcs_tutorialspoint.com_Olga-Sharma</name>
+    <description/>
+      
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    
+    <dependencies>
+    </dependencies>
+      
+	<dependencyManagement>
+      <dependencies>
+		 
+         <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
+		<dependency>
+		    <groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-dependencies</artifactId>
+		    <version>2022.0.3</version>
+		    <type>pom</type>
+		    <scope>import</scope>
+		</dependency>
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>3.1.0</version>
+            <type>pom</type>
+            <scope>import</scope>
+         </dependency>
+                  
+      </dependencies>
+   </dependencyManagement>
+    
+     <build>
+      <plugins>
+         <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <executions>
+               <execution>
+                  <goals>
+                     <goal>repackage</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+    
+	<modules>  
+		<module>spring-cloud-eureka-server2</module>
+  	  	<module>spring-cloud-eureka-client2</module>
+    	<module>spring-cloud-feign-client2</module>
+  	</modules>
+  	
+</project>

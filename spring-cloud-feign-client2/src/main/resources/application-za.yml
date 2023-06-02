@@ -1,0 +1,15 @@
+# restaurant-service
+
+spring:
+   application:
+      name: restaurant-service
+server:
+   port: ${app_port}
+eureka:
+   instance:
+      metadataMap:
+         zone: ${zone_name}
+   client:
+      serviceURL:
+         defaultZone: http://localhost:8900/eureka
+         # standalone EUREKA server with Eureka – Zone Awareness

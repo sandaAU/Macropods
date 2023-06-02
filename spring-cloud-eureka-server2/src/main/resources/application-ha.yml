@@ -1,0 +1,12 @@
+spring:
+   application:
+      name: eureka-server
+server:
+   port: ${app_port}
+eureka:
+   client:
+      serviceURL:
+         defaultZone: ${eureka_other_server_url}
+         
+         
+# EUREKA server in high-availability mode
